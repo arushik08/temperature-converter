@@ -5,9 +5,11 @@
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="./style.css"/>
 </head>
-<body>
+<body class="font">
+   <h1 class="font">Online Temperature Converter</h1>
+    <p class="font">This website allows you to convert celsius to fahrenheit and vice-versa.</p>
     <div class="upper-box">
-        <label id="cel" for="Celsius">Celsius : </label>
+        <label id="cel" for="Celsius" class="font">Celsius : </label>
         <input id="celsius" type="text" placeholder="Enter the temperature in degree Celsius">
         <button id="main" onclick="convertFahrenheit()">Fahrenheit</button>
     </div>
@@ -15,12 +17,13 @@
     <br>
 
     <div>
-        <label id="fah" for="Fahrenheit">Fahrenheit : </label>
+        <label id="fah" for="Fahrenheit" font="font">Fahrenheit : </label>
         <input id="fahrenheit" type="text" placeholder="Enter the temperature in degree Fahrenheit">
         <button id="main2" onclick="convertCelsius()">Celsius</button>
         
         
     </div>
+   
     <br>
     <button onclick="reset()">Reset</button>
     <script src="convert.js"></script>
